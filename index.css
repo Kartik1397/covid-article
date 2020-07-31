@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+}
+
+html {
+    color: rgb(36, 37, 41);
+    letter-spacing: 0.05em;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 9999;
+    top: 4rem;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+}
+
+header .logo {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+header .list .item {
+    font-size: 12px;
+    line-height: 13px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    margin-left: 70px;
+    letter-spacing: .1em;
+    align-items: center;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.item a {
+    font-weight: 500;
+    line-height: 2rem;
+    color: rgba(36, 37, 41, .8);
+}
+
+.item a:hover {
+    color: black;
+}
+
+.block {
+    padding: 12rem 0 15rem;
+    overflow: hidden;
+}
+
+.block0 {
+    position: relative;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.clock {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 100%;
+    height: 100%;
+    background-image: url(corona.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: rotate;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {-webkit-transform:rotate(0deg);}
+    to {  -webkit-transform:rotate(360deg);}
+}
+
+.inner {
+    position: relative;
+    height: 100%;
+    left: 15%;
+    margin: 0 auto;
+
+    background: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,1) 800px, rgba(255,255,255,1) 800px, rgba(255,255,255,0) 1600px);
+}
+
+.inner-bg {
+    background-image: url(covid-china.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.sym-bg {
+    background-image: url(symp.jpg);
+}
+
+.diag-bg {
+    background-image: url(diag.jpg);
+}
+
+.box {
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin-top: 3rem;
+    margin-left: 0;
+    transform: translateY(-50%);
+}
+
+.block0 .tit {
+    background-color: #f44336;
+    color: white;
+    padding-left: 10px;
+    display: inline-block;
+}
+.tit {
+    font-size: 7rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+}
+
+.subTit {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.block1 {
+    position: relative;
+    padding: 10rem 0;
+}
+
+.text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.block1 .tit {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+
+.block1 .subTit {
+    font-weight: 800;
+    background-color: #039be5;
+    color:white;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+.block1 .text {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.author .subTit {
+    background: none;
+    color: rgb(36, 37, 41);
+}
+.author-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.author-name {
+    display: inline-block;
+    line-height: 100px;
+    position: relative;
+    top: 50%;
+    margin-left: 2rem;
+    transform: translateY(-90%);
+    font-size: 2.5rem;
+}
+
+.icons {
+    font-size: 5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.like-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 80px;
+    margin-right: 120px;
+    font-size: 1.5rem;
+    color: #bb002f;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+a:visited {
+    color: #242529;
+}
+
+a {
+    color: #242529;
+}
+
+.share .inner {
+    max-width: 70%;
+    left: 0;
+}
