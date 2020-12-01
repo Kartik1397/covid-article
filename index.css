@@ -10,6 +10,18 @@
     border: 0;
 }
 
+.link
+{
+    font-style: italic;
+    color : blue ; 
+    font-size: 1.3em;
+    text-decoration-color: #039be5;
+
+}
+.link-para{
+    color : blue;
+   
+}
 html {
     color: rgb(36, 37, 41);
     letter-spacing: 0.05em;
