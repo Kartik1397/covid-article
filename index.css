@@ -234,3 +234,11 @@ a {
     max-width: 70%;
     left: 0;
 }
+
+.fa-facebook , .fa-twitter{
+    color: #039be5;
+}
+
+.fa-instagram{
+    color: rgb(218, 70, 95);
+}
